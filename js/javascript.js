@@ -17,6 +17,11 @@ if(anniUtente < 18 ){
                    prezzoScontato = prezzoNonScontato - prezzoNonScontato * 20 / 100;
                    console.log(`Il prezzo scontato per i minorenni è di ${prezzoScontato}`);
                     }
-
+else if (anniUtente > 65){
+                        prezzoScontato = prezzoNonScontato - prezzoNonScontato * 40 / 100;
+                        console.log(`Il prezzo scontato per gli over 65 è di ${prezzoScontato}`);
+}
+else 
+   prezzoNonScontato = prezzoScontato;
 
 
