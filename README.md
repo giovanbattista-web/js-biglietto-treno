@@ -5,4 +5,3 @@
 // Calcolo il prezzo del biglietto non scontato in base al valore relativo ai km inserito dall'utente
 // Se l'utente è minorenne gli applico uno sconto del 20%
 // Altrimenti se l'utente è un over 65 gli applico uno sconto del 40%
-// 
