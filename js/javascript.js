@@ -14,15 +14,15 @@ console.log(`Il prezzo definito in base ai km è di ${prezzoNonScontato}`);
 
 // SCONTO DEL 20% APPLICATO AI MINORENNI
 if(anniUtente < 18 ){ 
-                   prezzoScontato = prezzoNonScontato - prezzoNonScontato * 20 / 100;
+                   prezzoScontato = (prezzoNonScontato - prezzoNonScontato * 20 / 100).toFixed(2);
                    console.log(`Il prezzo scontato per i minorenni è di ${prezzoScontato}`);
                     }
 else if (anniUtente > 65){
-                        prezzoScontato = prezzoNonScontato - prezzoNonScontato * 40 / 100;
+                        prezzoScontato = (prezzoNonScontato - prezzoNonScontato * 40 / 100).toFixed(2);
                         console.log(`Il prezzo scontato per gli over 65 è di ${prezzoScontato}`);
 }
 else 
-   {prezzoNonScontato = prezzoScontato;
+   {(prezzoNonScontato = prezzoScontato).toFixed(2);
    }
 console.log(`Il prezzo del biglietto è di ${prezzoScontato}`);
 
