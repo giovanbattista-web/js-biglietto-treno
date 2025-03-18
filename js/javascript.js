@@ -22,6 +22,8 @@ else if (anniUtente > 65){
                         console.log(`Il prezzo scontato per gli over 65 è di ${prezzoScontato}`);
 }
 else 
-   prezzoNonScontato = prezzoScontato;
+   {prezzoNonScontato = prezzoScontato;
+   }
+console.log(`Il prezzo del biglietto è di ${prezzoScontato}`);
 
 
