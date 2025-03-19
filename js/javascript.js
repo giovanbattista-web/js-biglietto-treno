@@ -1,29 +1,31 @@
-// DICHIARAZIONE DELLE VARIABILI ED INSERIMENTO DEI VALORI 
-let scontoDiciottenni = "codice";
-let scontoOver = "code";
-let numeroKm = parseInt(prompt("Inserisci il numero di km da percorrere"));
-let anniUtente = parseInt(prompt("Inserisci l'età"));
+// DICHIARAZIONE ED INIZIALIZZAZIONE DELLE VARIABILI 
+const numeroKm = parseInt(prompt("Inserisci il numero di km da percorrere"));
+const anniUtente = parseInt(prompt("Inserisci la tua età"));
 
-// DICHIARAZIONE DELLE VARIABILI CHE CONTENGONO IL PREZZO SCONTATO E NON SCONTATO DEL BIGLIETTO 
-let prezzoScontato;
-let prezzoNonScontato;
+// DICHIARO UNA VARIABILE CHE CONTERRA' IL PREZZO DEL BIGLIETTO E LA INIZIALIZZO AL PREZZO BASE 
+let price = numeroKm * 0.21;
+//DICHIARO UNA VARIABILE MESSAGE A CUI ASSEGNERO' IL VALORE DURANTE IL CONTROLLO
+let message;
 
-// PREZZO DEFINITO IN BASE AI KM
-prezzoNonScontato = numeroKm * 0.21;
-console.log(`Il prezzo definito in base ai km è di ${prezzoNonScontato}`);
-
-// SCONTO DEL 20% APPLICATO AI MINORENNI
+// EFFETTUARE IL CONTROLLO SULL'ETA' INSERITA DALL'UTENTE
 if(anniUtente < 18 ){ 
-                   prezzoScontato = (prezzoNonScontato - prezzoNonScontato * 20 / 100).toFixed(2);
-                   console.log(`Il prezzo scontato per i minorenni è di ${prezzoScontato}`);
+                   // EFFETTUO IL CALCOLO DEL PREZZO SCONTATO DEL 20%
+                   price = price - price * 0.2;
+                   // SCRIVO IL MESSAGGIO DA MOSTRARE A VIDEO E LO ASSEGNO ALLA VARIABILE MESSAGE
+                   message = `Hai diritto ad uno sconto del 20%. Il prezzo del tuo biglietto è di ${price.toFixed(2)} €`;
                     }
 else if (anniUtente > 65){
-                        prezzoScontato = (prezzoNonScontato - prezzoNonScontato * 40 / 100).toFixed(2);
-                        console.log(`Il prezzo scontato per gli over 65 è di ${prezzoScontato}`);
-}
+                   // EFFETTUO IL CALCOLO DEL PREZZO SCONTATO DEL 40%
+                   price = price - price * 0.4;
+                   // SCRIVO IL MESSAGGIO DA MOSTRARE A VIDEO E LO ASSEGNO ALLA VARIABILE MESSAGE
+                   message = `Hai diritto ad uno sconto del 40%. Il prezzo del tuo biglietto è di ${price.toFixed(2)} €`;
+                    }
 else 
-   {(prezzoNonScontato = prezzoScontato).toFixed(2);
+   {
+      //IL PREZZO NON SUBISCE SCONTI POICHE' CI RITROVIAMO NEL RANGE D'ETA' COMPRESA TRA 18 E 65
+      // SCRIVO IL MESSAGGIO DA MOSTRARE A VIDEO E LO ASSEGNO ALLA VARIABILE MESSAGE  
+      message = `Il prezzo del tuo biglietto è ${price.toFixed(2)} €`;
    }
-console.log(`Il prezzo del biglietto è di ${prezzoScontato}`);
+console.log(message);
 
 
