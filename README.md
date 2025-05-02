@@ -1,7 +1,10 @@
-// Dichiaro due variabili ( una per lo sconto da applicare ai minorenni ed un'altra per lo sconto agli over 65)
-// Dichiaro una variabile per l'inserimento del primo valore da parte dell'utente
-// Dichiaro una variabile per l'inserimento del secondo valore da parte dell'utente
-// Dichiaro altre due variabili ( una per il prezzo scontato ed un'altra per quello non scontato)
-// Calcolo il prezzo del biglietto non scontato in base al valore relativo ai km inserito dall'utente
-// Se l'utente è minorenne gli applico uno sconto del 20%
-// Altrimenti se l'utente è un over 65 gli applico uno sconto del 40%
+// DICHIARO ED INIZIALIZZO 2 VARIABILI
+// DICHIARO UNA VARIABILE CHE CONTERRA' IL PREZZO DEL BIGLIETTO E LA INIZIALIZZO AL PREZZO BASE 
+// DICHIARO UNA VARIABILE MESSAGE A CUI ASSEGNERO' IL VALORE DURANTE IL CONTROLLO
+// EFFETTUO IL CONTROLLO SULL'ETA' INSERITA DALL'UTENTE
+// EFFETTUO IL CALCOLO DEL PREZZO SCONTATO DEL 20%
+// SCRIVO IL MESSAGGIO DA MOSTRARE A VIDEO E LO ASSEGNO ALLA VARIABILE MESSAGE
+// EFFETTUO IL CALCOLO DEL PREZZO SCONTATO DEL 40%
+// SCRIVO IL MESSAGGIO DA MOSTRARE A VIDEO E LO ASSEGNO ALLA VARIABILE MESSAGE
+//IL PREZZO NON SUBISCE SCONTI POICHE' CI RITROVIAMO NEL RANGE D'ETA' COMPRESA TRA 18 E 65
+// SCRIVO IL MESSAGGIO DA MOSTRARE A VIDEO E LO ASSEGNO ALLA VARIABILE MESSAGE  
