@@ -8,7 +8,7 @@ Il programma dovrà chiedere all'utente il numero di chilometri che vuole percor
 Numero di push minimo: 6
 Ricordatevi di spezzare il problema in sottoproblemi come visto a lezione nel file README.md
 
-// SPEZZETTO IL README.md
+// SPEZZETTO IL README.md IN SOTTOPROBLEMI
 DICHIARO ED INIZIALIZZO 2 VARIABILI
 DICHIARO UNA VARIABILE CHE CONTERRA' IL PREZZO DEL BIGLIETTO E LA INIZIALIZZO AL PREZZO BASE 
 DICHIARO UNA VARIABILE MESSAGE A CUI ASSEGNERO' IL VALORE DURANTE IL CONTROLLO
